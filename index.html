@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="./core.js"></script>
+</head>
+
+<style>
+    .text {
+        background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+    }
+    
+    .Typewriter__cursor {
+        display: none;
+    }
+    
+    .clr {
+        color: #8193b2;
+    }
+</style>
+
+<body style="background-color:#040D21">
+    <div class="container text-white pt-5">
+        <div id="app" class="col-lg-8 col-md-8 col-12 mx-auto "></div>
+    </div>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+
+        typewriter.typeString('<p class=" clr fs-3 fw-semibold "> <span class="text-white" > Hello My Baby, (Raana Ebrazi) </p>')
+            // .pauseFor(500)
+            // .deleteAll()
+            .typeString('<p class=" text fs-2 fw-bolder pt-4">  I LOVE YOU SO MUCH </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">  Your eyes are like the ocean I could swim in them all day. </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">   You’ve got a lot of beautiful curves, but your smile is absolutely my favorite. </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">   let me be your CSS to your HTML </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">   Are you a keyboard, cause you are my type </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">   We can merge, without conflicts! </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 text-capitalize">  May I append my surname to your name </p>')
+            .typeString('<p class=" text fs-2 fw-bolder pt-4 pb-5 text-capitalize">  Can you be my html because i will give my body to you </p>')
+
+        // .pauseFor(500)
+        // .deleteChars(23)
+        // .typeString('<strong>altered!</strong>')
+        // .pauseFor(500)
+        .start();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
